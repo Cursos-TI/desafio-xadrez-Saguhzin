@@ -1,47 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
 
+int main()
+{
+  int i, j = 1;
 
-int main(){
+  for (int i = 1; i <= 1; i++) //quantidade de vezes que deve aparecer esquerda
+      {
+        while (j <= 3) 
+            {
+                printf("Baixo\n");
+                ++j;
+            }
 
-//==========================================================
-//     Declarando variaveis :
-//==========================================================
-
-    int t = 0;  //numero de casas torre
-    int b = 0;  //numero de casas bispo
-    int r = 0;  //numero de casas rainha
-
-//==========================================================
-//      TORRE
-//==========================================================
-
-   for(t ; t < 5 ; t++) //5 casas (ele começa em 0 ent precisamos parar antes do 5)
-   {
-     printf("Direita\n");
-   }
-
-//==========================================================
-//      BISPO
-// =========================================================
-
-   while (b < 5)//5 casas :
-   {
-      
-      printf("Cima, Direita\n");
-      b++; //incremento
-   }
+        printf("Esquerda\n");
+      }
+            
+        
   
-//==========================================================
-//RAINHA
-//==========================================================
-
-   do {
-
-      printf("Esquerda\n");
-      r++;
-
-   } while (r < 8); //8 casas :
-
- return 0; 
+  return 0;
 }
